@@ -1,0 +1,13 @@
+{
+    "id": "b5029429-6d1f-4d2b-acca-e8970dc14aab",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "b5029429-6d1f-4d2b-acca-e8970dc14aab",
+    "children": [
+        
+    ],
+    "filterType": "GMNotes",
+    "folderName": "notes",
+    "isDefaultView": false,
+    "localisedFolderName": "ResourceTree_Notes"
+}
