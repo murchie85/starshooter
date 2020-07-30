@@ -10,3 +10,6 @@ bossFlag = 0;
 gameStep = 0;
 
 animationFlag = 0
+animationTextComplete = 0;
+lineCounter = 0;
+characterTalking = 0;

@@ -8,7 +8,8 @@
         "f7a54259-3ec3-4c96-865e-6e22042bc669",
         "c38eb761-c4da-469c-acfd-9a8fdf9a004c",
         "5edf0d8e-4e6a-4b75-9446-a17c039bae40",
-        "a7c968b4-ad0b-405a-af32-e9499cec0362"
+        "a7c968b4-ad0b-405a-af32-e9499cec0362",
+        "0f692a4e-48ec-443c-a09d-8ac36082fe4b"
     ],
     "filterType": "GMSprite",
     "folderName": "env",
