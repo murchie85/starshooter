@@ -35,8 +35,31 @@ PRESS L FOR LEVEL 1
 >> PRESS ENTER TO START << "
 
 	);
+	
+	draw_text(
+		room_width/2, room_height/2, 
+@"Good luck hot shot!
+
+ARROW KEYS: MOVE
+SPACE: SHOOT
+
+COLLECT BONUS ITEMS TO POWER UP 
+
+PRESS L FOR LEVEL 1
+
+>> PRESS ENTER TO START << "
+
+	);
 	draw_set_halign(fa_left)
 	break;
+
+
+
+
+
+
+
+
 
 	// ------------
 	// WIN MENU 

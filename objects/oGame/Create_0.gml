@@ -6,4 +6,4 @@ lives = 3;
 
 
 animationTextComplete = 0;
-
+HARD_MODE = 0;

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "07fffa68-cc3c-4268-a557-3f01c4844996",
+            "Value": {
+                "id": "4f0eed74-7df2-4bab-aa40-da5fbbf4bb6b",
+                "resourcePath": "objects\/oSMaiIntroHard\/oSMaiIntroHard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a96e32a-d396-43cf-8aa7-7f6567cc094d",
             "Value": {
                 "id": "f8fe8f57-83a7-47f2-a1cd-962eeb66cf1d",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "8f18afd8-91de-4c1f-965b-b4778dd31e07",
+                "resourcePath": "options\/linux\/options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
             "Key": "a99a6a92-f202-4cda-9d89-b3ac9c477bd6",
             "Value": {
                 "id": "7564a37b-8714-406c-b73b-d9da80a91a7e",
@@ -724,6 +740,14 @@
                 "id": "0dbd8e40-b1cd-455b-a46f-bbb1cfdecbc3",
                 "resourcePath": "sprites\/sEnemyBullet\/sEnemyBullet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
+            "Value": {
+                "id": "db310064-0423-4f08-a29e-67f97afad6eb",
+                "resourcePath": "options\/windows\/options_windows.yy",
+                "resourceType": "GMWindowsOptions"
             }
         },
         {

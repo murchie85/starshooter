@@ -7,9 +7,8 @@ if(room== rm_levelOne){
 	
 	//letter = tilemap_get(tLetters,2,1)
 	
-	if(animationFlag = 0){instance_create_layer(0,0,"Instances",oSMaiIntro); animationFlag =1}
-
-	
+	if(animationFlag = 0 and hard_Selected = 0){instance_create_layer(0,0,"Instances",oSMaiIntro); animationFlag =1}
+	if(animationFlag = 0 and hard_Selected = 1){instance_create_layer(0,0,"Instances",oSMaiIntroHard); animationFlag =1}
 
 
 	// debug

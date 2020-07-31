@@ -29,10 +29,21 @@ ARROW KEYS: MOVE
 SPACE: SHOOT
 
 COLLECT BONUS ITEMS TO POWER UP 
+"
 
-1: LEVEL ONE
-
->> PRESS ENTER TO START << "
+	);
+	
+	var c = c_lime;
+	draw_text_transformed_color(
+	
+		room_width/2,0.8*room_height, "H: HARD MODE - PRESS H FOR **HARD MODE** ", 1, 1, 0, c,c,c,c,1
+	
+	);
+	
+	
+	draw_text(
+		room_width/2, room_height/3, 
+@">> PRESS ENTER TO START << "
 
 	);
 	draw_set_halign(fa_left)

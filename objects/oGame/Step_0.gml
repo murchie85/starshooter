@@ -24,3 +24,13 @@ if(keyboard_check_pressed(ord("D"))){
 
 }
 
+if(keyboard_check_pressed(ord("H"))){
+	switch(room){
+		case rm_start:
+			HARD_MODE = 1
+			room_goto(rm_levelOne);
+			break;
+	}
+
+}
+

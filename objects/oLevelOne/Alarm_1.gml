@@ -7,7 +7,7 @@ if(room!= rm_levelOne){ exit;}
 var xx = choose(irandom_range(0,room_width));
 var yy = irandom_range(-5,-700)
 //choose(oTank,oFrigate,oScout,oFreighter)
-instance_create_layer(xx,yy, "Instances", choose(oFrigate,oScout,oDestroyer,oFreighter));
+instance_create_layer(xx,yy, "Instances", choose(oFrigate,oScout,oDestroyer,oFreighter,oSpinner,oStealth));
 
 
 
