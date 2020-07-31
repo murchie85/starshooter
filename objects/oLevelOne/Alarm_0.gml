@@ -1,6 +1,6 @@
-/// @description spawn asteroids
-// You can write your code in this editor
-if(room!= rm_game){ exit;}
+/// @description asteroid spawn
+
+if(room!= rm_levelOne){ exit;}
 
 if (!instance_exists(oAsteroid)){
 	var amount = irandom_range(1,4)

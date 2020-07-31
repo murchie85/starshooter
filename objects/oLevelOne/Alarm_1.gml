@@ -1,6 +1,6 @@
 /// @description enemy spawn
 // You can write your code in this editor
-if(room!= rm_game){ exit;}
+if(room!= rm_levelOne){ exit;}
 
 
 
