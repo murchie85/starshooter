@@ -1,23 +1,23 @@
 /// @description takes a list of numbers and writes them as letters 
 letterTicker += 1;
 lineLength    = array_length_1d(LineToWrite)
-show_debug_message(string(lineLength))
 
 
 if(letterTicker/60 > 0.05){
 	
 	
 	
-	if(lineLength<59 and finished =0){
+	if(lineLength <59 and finished =0){
 
 		if(LineToWrite[leterPosition] = -1){ 
 			if(shiftxposition == 1){StartPositionX = originalStartPositionX - 16; StartPositionY = StartPositionY + 2 * sprite_get_height(sLetters); shiftxposition = 2}	
 			if(shiftxposition == 0){StartPositionX = originalStartPositionX - 16; StartPositionY = StartPositionY + 2 * sprite_get_height(sLetters); shiftxposition = 1}	}
 
 		letterIndex = LineToWrite[leterPosition]
-	
+		
 		myText = instance_create_layer(StartPositionX,StartPositionY,"textInstance", oLetters)
 		myText.image_index = letterIndex
+		myText.offsetX = offsetX
 		letterTicker = 0;
 	
 		StartPositionX = StartPositionX + sprite_get_width(sLetters);
@@ -36,6 +36,7 @@ if(letterTicker/60 > 0.05){
 	
 		myText = instance_create_layer(StartPositionX,StartPositionY,"textInstance", oLetters)
 		myText.image_index = letterIndex
+		myText.offsetX = offsetX
 		letterTicker = 0;
 	
 		StartPositionX = StartPositionX  + sprite_get_width(sLetters);;
@@ -46,6 +47,7 @@ if(letterTicker/60 > 0.05){
 		letterIndex = LineToWrite[leterPosition]
 		myText = instance_create_layer(StartPositionX,StartPositionY,"textInstance", oLetters)
 		myText.image_index = letterIndex
+		myText.offsetX = offsetX
 		letterTicker = 0;
 	
 		StartPositionX = StartPositionX + sprite_get_width(sLetters);;
@@ -69,6 +71,10 @@ if(finished ==1){
 }
 	
 	
-if(destroy_me =1){instance_destroy()}
+if(destroy_me =1){
+	if(instance_exists(oLetters)){oLetters.destroy_me = 1; }
+	instance_destroy()
+	
+	}
 
 

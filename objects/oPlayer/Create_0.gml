@@ -2,7 +2,7 @@
 x = room_width/2
 hsp = 0;
 vsp = 0;
-movementSpeed = 5;
+movementSpeed = 6;
 bullet_timer = 0
 powerLevel = 0;
 laserPowerLevel = 0;

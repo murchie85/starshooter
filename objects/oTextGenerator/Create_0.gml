@@ -16,3 +16,4 @@ StartPositionX = room_width/3
 StartPositionY = room_height/3
 originalStartPositionX = StartPositionX
 shiftxposition = 0;
+offsetX = 0;

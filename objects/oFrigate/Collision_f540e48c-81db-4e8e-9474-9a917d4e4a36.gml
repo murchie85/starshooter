@@ -13,7 +13,7 @@ enemytwoHealth = enemytwoHealth - 1;
 if (enemytwoHealth < 1 ){
 	score += 300
 	instance_destroy()
-	draw_sprite(sExplosionOne,-1,x,y)
+	instance_create_layer(x,y,"Instances",oExplosionOne)
 
 		repeat(10){
 			instance_create_layer(x,y,"Instances",oAsteroidDebris);

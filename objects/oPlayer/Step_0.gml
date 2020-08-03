@@ -10,6 +10,7 @@ key_space_held = keyboard_check(vk_space);
 key_space = keyboard_check_pressed(vk_space);
 
 
+
 // horizontal movement
 var hMove = key_right - key_left;
 hsp = hMove * movementSpeed;
@@ -148,3 +149,7 @@ else if (hsp = 0){
 	sprite_index = sPlayer
 	image_speed = 1
 }
+
+
+// DEBUG 
+//show_debug_message("MY POSITION" + string(x))

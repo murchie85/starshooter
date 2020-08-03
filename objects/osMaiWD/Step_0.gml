@@ -1,60 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
-timer += 1
-	if(lineCounter ==0){
+
+
+	/// ONCE ONLY 
+	if(animationFlag =0){
+	MAI = instance_create_layer(camera_get_view_x(view_camera[0]),room_height-300, "frontInstances", oMai);
+	animationFlag+=1
+	}
+	
+	// SWITCHES MAI TO TALKING MODE 
+	// USEFUL maiInstance = instance_find(MAI, instance_number(MAI) - 1)
+	if (instance_exists(MAI)){ if(MAI.image_index == -1 and MAI.sprite_index = sMAIstart){MAI.sprite_index = sMaiSmiling; characterTalking = 1}}
+	
+	if(characterTalking==1){
 		
-		oGame.animationTextComplete = 0
-		MAI = instance_create_layer(camera_get_view_x(view_camera[0]),room_height-300, "frontInstances", oMai);
-		MAI.startAnimationComplete = 0
-		lineCounter=1
+		// Write Letters 
+		if(write_event =0 ){
+			// GOOD JOB!
+		 MAITEXT = instance_create_layer(x,y,"textInstance",oTextGeneratorDynamic)
+		 MAITEXT.LineToWrite = [22, 40, 48, 63, 67, 22, 30, 37, 37, 67, 3, 40, 39, 30, 63, -1, 18, 40, 65, 65, 65, 33, 40, 48, 67, 26, 27, 40, 46, 45, -1, 45, 33, 26, 45, 67, 27, 30, 30, 43, 64];
+		 MAITEXT.StartPositionY =  0.3* sprite_get_height(sMAIstart)
+		 MAITEXT.offsetX = 0.4 * room_width;
+		 write_event =1
+		}
+		// WAIT UNTIL TEXT IS FINISHED then issue command to destroy textgenerator instance
+		if(write_event =1){if(MAITEXT.finished ==2){MAITEXT.destroy_me=1; write_event =2}}
+
+
+		// WAIT UNTIL TEXT IS CLEARED
+		if(write_event =2 )
+		{timer +=1;
+		if(timer/60 > 1){lineCounter +=1 characterTalking +=1;}
+		}
 		
-	}
-	
-	// Well done
-	if(lineCounter == 1 and MAI.startAnimationComplete=1 and timer/60 > 1 ){
-		oGame.animationTextComplete = 0
-		MAI.sprite_index = sMaiSmiling
-		MAI.image_speed = 1;
-		lineCounter = 2
-		myText = instance_create_layer(0,0,"Instances",oWriteText)
-		myText.passedVar = [23, 41, 49, 64, 0, 23, 31, 38, 38, 0, 30, 41, 40, 31, 64];
-		myText.letterTotal = 15
-		myText.startingXPos = 19
-		myText.y = 4
-	}
-	
-	if(lineCounter == 2 and oGame.animationTextComplete=1 and timer/60 > 3 ){
-		oGame.animationTextComplete = 0
-		MAI.sprite_index = sMaiSmiling
-		MAI.image_speed = 1;
-		lineCounter = 3
-		myText = instance_create_layer(0,0,"Instances",oWriteText)
-myText.passedVar = [45, 41, 66, 66, 66, 34, 41, 49, 0, 27, 28, 41, 47, 46];
-myText.letterTotal = 14
-		myText.startingXPos = 19
-		myText.y = 6
-	}
-	
-	if(lineCounter == 3 and oGame.animationTextComplete=1 and timer/60 > 4){
-		oGame.animationTextComplete = 0
-		MAI.sprite_index = sMaiSmiling
-		MAI.image_speed = 1;
-		lineCounter = 4
-		myText = instance_create_layer(0,0,"Instances",oWriteText)
-myText.passedVar = [46, 34, 27, 46, 0, 28, 31, 31, 44, 65];
-myText.letterTotal = 10
-		myText.startingXPos = 19
-		myText.y = 8
-	}
 		
-	// Clear Screen
-	if( oGame.animationTextComplete == 1 and lineCounter == 4)
-	{
-		myText = instance_create_layer(0,0,"Instances",oClearText); 
-		lineCounter +=1; 
-		oGame.animationTextComplete = 0 
+		
+
+
+	}	
+
+	// PURGE ANIMATION 
+	if(lineCounter == 1){
+		oGame.animationTextComplete = 0;
+		lineCounter +=1
+	with(MAI){instance_destroy()}
+	instance_destroy()
 	}
-	
-	if(oGame.animationTextComplete ==1 and lineCounter == 5){
-	   with(MAI){instance_destroy()}
-	}
+

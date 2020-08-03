@@ -3,3 +3,4 @@
 animationTimer = 0
 startAnimationComplete = 0
 startflag = 0
+animationEnd = 0;
