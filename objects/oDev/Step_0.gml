@@ -29,9 +29,9 @@ if(layer_get_y("thirdBackground") > 850){
 
 
 
-// Write Letters 
+// Shield 
 if(write_event=0){
- instance_create_layer(x,y,"Instances",oTextGeneratorDynamic)
- oTextGeneratorDynamic.LineToWrite =[7, 30, 37, 37, 40, 67, 17, 40, 40, 36, 34, 30, -1, 8, 45, 44, 67, 45, 34, 38, 30, 67, 45, 40, 67, 32, 30, 45, 67, 50, 40, 46, 43, 67, 33, 30, 26, 29, -1, 34, 39, 67, 45, 33, 30, 67, 32, 26, 38, 30];
+ instance_create_layer(x,y,"frontInstances",oPowerUpShield)
+
  write_event =1
 }

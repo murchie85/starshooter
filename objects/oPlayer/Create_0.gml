@@ -7,3 +7,6 @@ bullet_timer = 0
 powerLevel = 0;
 laserPowerLevel = 0;
 activeWeapon = 1
+
+shield= 0;
+playerHealth = 1;

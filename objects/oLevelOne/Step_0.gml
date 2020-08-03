@@ -13,16 +13,10 @@ if(room== rm_levelOne){
 
 	// debug
 	if (gameStep = 0){
-		draw_sprite(sExplosionOne,-1,x,y)
-		
+		 //instance_create_layer(x,y,"frontInstances",oPowerUpShield)
 
-
+		//draw_sprite(sExplosionOne,-1,x,y)
 		
-		
-	//instance_create_layer(0.2*room_width,-200,"Instances",oStealth)
-	//instance_create_layer(0.4*room_width,-200,"Instances",oStealth)
-	//instance_create_layer(0.6*room_width,-200,"Instances",oStealth)
-	//instance_create_layer(0.8*room_width,-200,"Instances",oStealth)
 
 	//instance_create_layer(0.9*room_width,-200,"Instances",oDestroyer)
 	//instance_create_layer(room_width/2,0,"Instances",oPowerUpLaser)
@@ -224,11 +218,9 @@ if(room== rm_levelOne){
 		
 		
 		
-	// Spawn Power up
+	// Spawn Power up not out a freighter
 	if (game_timer > 115 and powerUp ==0){
-		var xpos = choose(irandom_range(0,room_width));
-		var ypos = -10
-		layerNumber = instance_create_layer(xpos,ypos, "Instances", oPowerUpBullet);
+		instance_create_layer(x,y,"frontInstances",oPowerUpShield)
 		powerUp +=1
 			}
 

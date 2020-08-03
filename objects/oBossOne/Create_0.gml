@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-bossHealth = 500
+bossHealth = 1000
 if(!instance_exists(oPlayer)){instance_destroy()}
 //if(oPlayer.powerLevel >3){bossHealth = 1000}
 

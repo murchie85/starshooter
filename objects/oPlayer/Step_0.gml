@@ -80,6 +80,17 @@ if (key_space_held && powerLevel >= 3 && activeWeapon == 1){
 	}
 }
 
+if(shield =1){
+	
+instance_create_layer(x,y,"frontInstances",oShield)
+shield = 0;
+	
+}
+
+
+
+
+
 /* TOO FAST
 // POWERUP TRIPPLE FAST SHOT
 if (key_space_held && powerLevel >= 4 && activeWeapon == 1){

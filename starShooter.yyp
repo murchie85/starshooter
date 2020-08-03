@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "7effe9c7-c02c-4c3d-a105-720d88ad6871",
+            "Value": {
+                "id": "41d83605-5e9b-49d2-ba08-985e410f8c43",
+                "resourcePath": "sprites\/sShieldUp\/sShieldUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7fcd70d5-b75c-41e9-a47d-be6933a0079b",
             "Value": {
                 "id": "5b1c7f05-e6b3-425b-adeb-faab5fc44635",
@@ -611,6 +619,14 @@
             "Value": {
                 "id": "e80a6890-8be3-40a5-82c5-63e4ef04f6a3",
                 "resourcePath": "objects\/oSMaiShock\/oSMaiShock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "88171e55-db7e-4ba1-b628-9589e4e82632",
+            "Value": {
+                "id": "6fb48c90-7d30-4f9c-8a6b-f695365fce1f",
+                "resourcePath": "objects\/oPowerUpShield\/oPowerUpShield.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -655,6 +671,14 @@
             }
         },
         {
+            "Key": "9b1da9d7-cbbb-4e3f-be08-724690c0a6e3",
+            "Value": {
+                "id": "5ede295b-4fa3-4389-8547-187ab9bf9651",
+                "resourcePath": "objects\/oShield\/oShield.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9e8be0a9-57e8-4582-9371-258b1ccc5f9a",
             "Value": {
                 "id": "11a8865e-e7d0-4811-bc55-bfd760e7c682",
@@ -668,6 +692,14 @@
                 "id": "9bdec153-a3e9-426f-ba98-0cfbb4da3233",
                 "resourcePath": "objects\/oStealth\/oStealth.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a442eb19-0eee-45cc-913f-6dba7cd5107f",
+            "Value": {
+                "id": "b74990e6-ca9f-42f6-82fd-f7b476251eb8",
+                "resourcePath": "views\/a442eb19-0eee-45cc-913f-6dba7cd5107f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -748,6 +780,14 @@
                 "id": "a277d081-aa7a-4182-9737-6e8131a2a2be",
                 "resourcePath": "objects\/oGame\/oGame.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b1191c52-ce6c-4055-9f83-17be6a1580d5",
+            "Value": {
+                "id": "7cab4ab9-e6e6-40b2-9585-fa2da23e07f0",
+                "resourcePath": "sprites\/sShield\/sShield.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
