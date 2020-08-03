@@ -18,7 +18,7 @@ draw_text(camera_get_view_x(view_camera[0]) +20,camera_get_view_y(view_camera[0]
 	var c = c_blue;
 	draw_text_transformed_color(
 	
-		room_width/2,room_height/5, "STRATO FIGHTER", 2, 2, 0, c,c,c,c,1
+		room_width/2,room_height/5, "OMEGA STORM", 5, 5, 0, c,c,c,c,1
 	
 	);
 	draw_text(
@@ -44,6 +44,12 @@ COLLECT BONUS ITEMS TO POWER UP
 	draw_text(
 		room_width/2, room_height/3, 
 @">> PRESS ENTER TO START << "
+
+	);
+	var c = c_lime;
+	draw_text_transformed_color(
+		 0.55* room_width, 0.05* room_height, 
+@" << CLICK BOX FOR FULL SCREEN (MAY NEED TO TAB BACK TO REFRESH)<< ", 1, 1, 0, c,c,c,c,1
 
 	);
 	draw_set_halign(fa_left)

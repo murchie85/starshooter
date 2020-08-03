@@ -11,7 +11,8 @@
         "4c6f51a7-47a6-4424-bfb0-eb3802dffaef",
         "22ca6fa7-664d-41a9-ba8e-008a9cc58805",
         "d4a2f3d3-ef50-4bdc-89d8-ceed857d50ea",
-        "6c69d47b-3d89-4126-8814-e8ce91f72e23"
+        "6c69d47b-3d89-4126-8814-e8ce91f72e23",
+        "a0747859-cb46-4cc8-9b4b-48ca1307780d"
     ],
     "filterType": "GMSprite",
     "folderName": "background and tilesets",
