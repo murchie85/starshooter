@@ -7,7 +7,7 @@ missileTime +=1
 if (missileTime > 45){
 	
 	// STALK PLAYER 
-	if (instance_exists(oPlayer)){speed = 1}else{exit;}
+	if (instance_exists(oPlayer)){speed = 3}else{exit;}
 	playerPos = oPlayer.x
 	// if to the right of the player
 	if (x > playerPos){

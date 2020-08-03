@@ -25,7 +25,7 @@ y += vsp;
 
 if (key_space_held && powerLevel == 0 && activeWeapon == 1){
 	bullet_timer += 1;
-	if (bullet_timer > 10){
+	if (bullet_timer > 8){
 		var bullet = instance_create_layer(x,y,"Instances",oBullet);
 		bullet.direction = 90;
 		bullet_timer = 0
@@ -80,7 +80,25 @@ if (key_space_held && powerLevel >= 3 && activeWeapon == 1){
 	}
 }
 
-
+/* TOO FAST
+// POWERUP TRIPPLE FAST SHOT
+if (key_space_held && powerLevel >= 4 && activeWeapon == 1){
+	bullet_timer += 1;
+	if (bullet_timer > 3){
+		
+		var bullet = instance_create_layer(x+10,y,"Instances",oBullet);
+		bullet.direction = 80;
+		
+		var bullet = instance_create_layer(x-10,y,"Instances",oBullet);
+		bullet.direction = 100;
+		
+		var bullet = instance_create_layer(x,y,"Instances",oBullet);
+		bullet.direction = 90;
+		
+		bullet_timer = 0
+	}
+}
+*/
 
 // POWERUP LASER SHOT
 if (key_space_held && laserPowerLevel >= 1 && activeWeapon == 2){

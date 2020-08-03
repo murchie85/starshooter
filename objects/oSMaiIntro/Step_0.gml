@@ -14,87 +14,43 @@
 	
 	if(characterTalking==1){
 		
-		// GOOD MORNING Rookie
-		if(lineCounter == 0){
-			lineCounter = 1
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [7, 41, 41, 30, 0, 39, 41, 44, 40, 35, 40, 33, 0, 44, 41, 41, 37, 35, 31];
-			myText.letterTotal = 19
-			myText.startingXPos = 19
-			myText.y = 4
+		// Write Letters 
+		if(write_event =0 ){
+		 MAITEXT = instance_create_layer(x,y,"textInstance",oTextGeneratorDynamic)
+		 MAITEXT.LineToWrite = [6, 40, 40, 29, 67, 38, 40, 43, 39, 34, 39, 32, 67, 43, 40, 40, 36, 34, 30, -1, 19, 33, 34, 44, 67, 34, 44, 67, 39, 40, 45, 67, 26, 39, 67, 30, 26, 44, 50, -1, 38, 34, 44, 44, 34, 40, 39, 65];
+		 MAITEXT.StartPositionX = MAI.x + 0.425* sprite_get_width(sMAIstart)
+		 MAITEXT.StartPositionY = MAI.y - 0.3* sprite_get_height(sMAIstart)
+		 MAITEXT.originalStartPositionX  = MAITEXT.StartPositionX
+		 write_event =1
 		}
-		
-		// THIS IS NOT AN EASY MISSION
-		if(oGame.animationTextComplete ==1 and lineCounter == 1){
-			lineCounter = 2
-			oGame.animationTextComplete  = 0
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [20, 34, 35, 45, 0, 35, 45, 0, 40, 41, 46, 0, 27, 40, 0, 31, 27, 45, 51];
-			myText.letterTotal = 19
-			myText.startingXPos = 19
-			myText.y = 6
+		if(write_event =1){if(MAITEXT.finished ==2){MAITEXT.destroy_me=1; write_event =2}}
+		if(write_event =2){
+		 MAITEXTTWO = instance_create_layer(x,y,"textInstance",oTextGeneratorDynamic)
+		 MAITEXTTWO.LineToWrite = [2, 37, 30, 26, 43, 67, 40, 46, 45, 67, 45, 33, 34, 44, -1, 44, 30, 28, 45, 40, 43, 65];
+		 MAITEXTTWO.StartPositionX = MAI.x + 0.425* sprite_get_width(sMAIstart)
+		 MAITEXTTWO.StartPositionY = MAI.y - 0.3* sprite_get_height(sMAIstart)
+		 MAITEXTTWO.originalStartPositionX  = MAITEXTTWO.StartPositionX
+		 
+		 write_event =3
 		}
-		// MISSION
-		if(oGame.animationTextComplete  ==1 and lineCounter == 2){
-			lineCounter = 3
-			oGame.animationTextComplete  = 0
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [39, 35, 45, 45, 35, 41, 40, 66];
-			myText.letterTotal = 8
-			myText.startingXPos = 19
-			myText.y = 8
-
-		}
-
-		// Clear Screen
-		if(oGame.animationTextComplete ==1 and lineCounter == 3){myText = instance_create_layer(0,0,"Instances",oClearText); lineCounter = 4; oGame.animationTextComplete = 0}
-	
-		// CLEAR OUT THIS 
-		if(oGame.animationTextComplete ==1 and lineCounter == 4){
-
-			lineCounter = 5
-			oGame.animationTextComplete = 0
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [3, 38, 31, 27, 44, 0, 41, 47, 46, 0, 46, 34, 35, 45];
-			myText.letterTotal = 14
-			myText.startingXPos = 19
-			myText.y = 4
-		}
-		
-		//Sector
-		if(oGame.animationTextComplete ==1 and lineCounter == 5){
-			show_debug_message("writing number four")
-			lineCounter = 6
-			oGame.animationTextComplete = 0
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [45, 31, 29, 46, 41, 44, 66];
-			myText.letterTotal = 7
-			myText.startingXPos = 19
-			myText.y = 6
-		}
-		
-		// Clear Screen
-		if(oGame.animationTextComplete ==1 and lineCounter == 6){myText = instance_create_layer(0,0,"Instances",oClearText); lineCounter +=1; oGame.animationTextComplete = 0}
-	
-	
-		// Then beer is on me
-		if(oGame.animationTextComplete ==1 and lineCounter == 7){
-			lineCounter += 1
-			oGame.animationTextComplete = 0
-			myText = instance_create_layer(0,0,"Instances",oWriteText)
-			myText.passedVar = [20, 34, 31, 40, 0, 28, 31, 31, 44, 0, 35, 45, 0, 41, 40, 0, 39, 31, 66];
-			myText.letterTotal = 19
-			myText.startingXPos = 19
-			myText.y = 6
+		if(write_event =3){if(MAITEXTTWO.finished ==2){MAITEXTTWO.destroy_me=1; write_event =4}}
+		if(write_event =4){
+		 MAITEXTTHREE = instance_create_layer(x,y,"textInstance",oTextGeneratorDynamic)
+		 MAITEXTTHREE.LineToWrite = [19, 33, 30, 39, 67, 27, 30, 30, 43, 67, 34, 44, 67, 40, 39, 67, 38, 30, 65];
+		 MAITEXTTHREE.StartPositionX = MAI.x + 0.425* sprite_get_width(sMAIstart)
+		 MAITEXTTHREE.StartPositionY = MAI.y - 0.3* sprite_get_height(sMAIstart)
+		 MAITEXTTHREE.originalStartPositionX  = MAITEXTTHREE.StartPositionX
+		 
+		 write_event =5
 		}
 		
 		// SMILE AND CLEAR TEXT
-		if(oGame.animationTextComplete ==1 and lineCounter == 8){myText = instance_create_layer(0,0,"Instances",oClearText); MAI.sprite_index = sMaiSmiling;  oGame.animationTextComplete = 0; lineCounter +=1}
-	
+		if(write_event =5 and MAITEXTTHREE.finished ==1 and lineCounter == 0){ MAI.sprite_index = sMaiSmiling; write_event +=1 }
+		if(write_event =6 and MAITEXTTHREE.finished ==2){MAITEXTTHREE.destroy_me=1; lineCounter +=1 characterTalking +=1;}
 	}	
 
 	// PURGE ANIMATION 
-	if(oGame.animationTextComplete == 1 and lineCounter == 9){
+	if(lineCounter == 1){
 		oGame.animationTextComplete = 0;
 		lineCounter +=1
 	with(MAI){instance_destroy()}

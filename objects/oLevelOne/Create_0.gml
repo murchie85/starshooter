@@ -11,3 +11,4 @@ animationTextComplete = 0;
 lineCounter = 0;
 characterTalking = 0;
 hard_Selected = 0;
+boss_defeated = 0;

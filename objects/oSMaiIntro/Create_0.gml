@@ -3,3 +3,5 @@
 animationFlag= 0
 lineCounter = 0
 characterTalking=0
+
+write_event = 0;

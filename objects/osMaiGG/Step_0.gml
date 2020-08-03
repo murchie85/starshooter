@@ -16,7 +16,7 @@
 		myText = instance_create_layer(0,0,"Instances",oWriteText)
 		myText.passedVar = [7, 41, 41, 30, 0, 36, 41, 28, 64];
 		myText.letterTotal = 9
-		myText.startingXPos = 19
+		myText.startingXPos = 20
 		myText.y = 4
 	}
 		

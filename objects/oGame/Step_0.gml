@@ -1,6 +1,6 @@
 /// @description main loop
-// You can write your code in this editor
 
+/// ROOM FLOW CONTROL
 if(keyboard_check_pressed(vk_enter)){
 	switch(room){
 		case rm_start:
@@ -15,6 +15,7 @@ if(keyboard_check_pressed(vk_enter)){
 
 }
 
+/// GO TO DEV
 if(keyboard_check_pressed(ord("D"))){
 	switch(room){
 		case rm_start:
@@ -23,7 +24,7 @@ if(keyboard_check_pressed(ord("D"))){
 	}
 
 }
-
+/// GO TO HARD MODE
 if(keyboard_check_pressed(ord("H"))){
 	switch(room){
 		case rm_start:

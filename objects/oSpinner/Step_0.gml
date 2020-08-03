@@ -35,7 +35,7 @@ if (y-20 and shotTimer < 150){vspeed = 1}
 	
 
 // Initial Salvo
-if(shot == 0 and y > room_height/6){
+if(shot == 0 and y > room_height/7){
 	firedBullet = instance_create_layer(x,y,"Instances",oScoutRound)
 	firedBullet.direction = 270
 	firedBullet = instance_create_layer(x,y,"Instances",oScoutRound)

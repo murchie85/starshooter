@@ -4,12 +4,11 @@
     "mvc": "1.1",
     "name": "96b9d270-6a8d-4232-b9b3-52b3abcd3209",
     "children": [
-        "1b296f33-b14c-41ec-af4e-c3a2a19879f8",
-        "d186517e-4ff7-459c-8e50-a705fe3b192f",
-        "b4309563-c857-457d-aa9b-2bbeba72d212"
+        "c7b5b876-3e76-4cc0-bce4-fea68b241860",
+        "efea500d-8572-450c-a49a-289df35ffe36"
     ],
     "filterType": "GMObject",
-    "folderName": "Characters",
+    "folderName": "Scenes and Characters",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

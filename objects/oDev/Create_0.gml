@@ -8,3 +8,8 @@ thirdBackground  =  layer_background_get_id("thirdBackground")
 layer_background_sprite(firstBackground, bWater);
 layer_background_sprite(secondBackground, bGrass);
 layer_background_sprite(thirdBackground, bDesert);
+
+
+write_flag = 0;
+
+write_event = 0;

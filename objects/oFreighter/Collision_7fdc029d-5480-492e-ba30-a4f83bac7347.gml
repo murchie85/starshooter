@@ -14,7 +14,7 @@ frieghterHealth = frieghterHealth - 1;
 if (frieghterHealth < 1 ){
 	score += 200
 	instance_destroy()
-
+	instance_create_layer(x,y,"Instances",oExplosionOne)
 		repeat(10){
 			instance_create_layer(x,y,"Instances",oAsteroidDebris);
 		}
